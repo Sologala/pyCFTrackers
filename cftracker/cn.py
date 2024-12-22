@@ -10,9 +10,9 @@ Python re-implementation of "Adaptive Color Attributes for Real-Time Visual Trac
 import numpy as np
 import cv2
 from .base import BaseCF
-from lib.utils import gaussian2d_labels,cos_window
-from lib.fft_tools import fft2,ifft2
-from cftracker.feature import extract_cn_feature
+from ..lib.utils import gaussian2d_labels,cos_window
+from ..lib.fft_tools import fft2,ifft2
+from .feature import extract_cn_feature
 from .config.cn_config import CNConfig
 class CN(BaseCF):
     def __init__(self,config=CNConfig()):

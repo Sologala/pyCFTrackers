@@ -12,8 +12,8 @@ import numpy as np
 import cv2
 from .base import BaseCF
 from .feature import extract_hog_feature
-from lib.utils import gaussian2d_labels,cos_window
-from lib.fft_tools import fft2,ifft2
+from ..lib.utils import gaussian2d_labels,cos_window
+from ..lib.fft_tools import fft2,ifft2
 from .scale_estimator import DSSTScaleEstimator,LPScaleEstimator
 
 class DSST(BaseCF):

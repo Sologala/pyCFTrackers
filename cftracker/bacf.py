@@ -9,8 +9,8 @@ Python re-implementation of "Learning Background-Aware Correlation Filters for V
 import numpy as np
 import cv2
 from .base import BaseCF
-from lib.utils import cos_window,gaussian2d_rolled_labels
-from lib.fft_tools import fft2,ifft2
+from pyCFTrackers.lib.utils import cos_window,gaussian2d_rolled_labels
+from pyCFTrackers.lib.fft_tools import fft2,ifft2
 from .feature import extract_hog_feature,extract_cn_feature
 from .config.bacf_config import BACFConfig
 from .cf_utils import mex_resize,resp_newton,resize_dft2

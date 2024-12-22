@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from lib.eco.features.features import fhog,TableFeature
+from pyCFTrackers.lib.eco.features.features import fhog,TableFeature
 
 
 def extract_hog_feature(img, cell_size=4):

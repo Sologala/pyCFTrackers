@@ -5,7 +5,7 @@ import cv2
 from os import makedirs
 from os.path import join, isdir
 
-from lib.log_helper import init_log, add_file_handler
+from pyCFTrackers.lib.log_helper import init_log, add_file_handler
 
 from cftracker.mosse import MOSSE
 from cftracker.staple import Staple
@@ -24,7 +24,7 @@ from cftracker.strcf import STRCF
 from cftracker.mccth_staple import MCCTHStaple
 from cftracker.opencv_cftracker import OpenCVCFTracker
 from cftracker.config import staple_config,ldes_config,dsst_config,csrdcf_config,mkcf_up_config,mccth_staple_config
-from lib.eco.config import otb_deep_config,otb_hc_config
+from pyCFTrackers.lib.eco.config import otb_deep_config,otb_hc_config
 
 parser = argparse.ArgumentParser(description='Test')
 
@@ -35,7 +35,7 @@ parser.add_argument('-v', '--visualization', dest='visualization', action='store
                     help='whether visualize result',default=True)
 parser.add_argument('--gt', action='store_true', help='whether use gt rect for davis (Oracle)')
 
-from lib.pysot.datasets import DatasetFactory
+from pyCFTrackers.lib.pysot.datasets import DatasetFactory
 
 def track_otb(tracker_type,dataset):
     for video in dataset:

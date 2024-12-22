@@ -10,8 +10,8 @@ Tracking-by-detection with Kernels"
 import numpy as np
 import cv2
 from .base import BaseCF
-from lib.utils import gaussian2d_labels,cos_window
-from lib.fft_tools import fft2,ifft2
+from pyCFTrackers.lib.utils import gaussian2d_labels,cos_window
+from pyCFTrackers.lib.fft_tools import fft2,ifft2
 class CSK(BaseCF):
     def __init__(self, interp_factor=0.075, sigma=0.2, lambda_=0.01):
         super(CSK).__init__()

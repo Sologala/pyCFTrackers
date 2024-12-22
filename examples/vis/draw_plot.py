@@ -2,7 +2,7 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 from examples.vis.OTB100_info import OTB100,OTB50,IV,SV,OCC,DEF,COLOR,GRAY,OTB2013
-from lib.utils import get_thresh_precision_pair,get_thresh_success_pair,calAUC
+from pyCFTrackers.lib.utils import get_thresh_precision_pair,get_thresh_success_pair,calAUC
 def get_preds_by_name(preds_dict,key):
     valid_keys=['gts','kcf_gray_preds','kcf_hog_preds','dcf_gray_preds',
                 'dcf_hog_preds','mosse','csk','eco_hc','kcf_cn','kcf_pyECO_cn',

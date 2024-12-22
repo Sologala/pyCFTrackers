@@ -4,12 +4,14 @@ import cv2
 import matplotlib.pyplot as plt
 
 def APCE(response_map):
-    Fmax=np.max(response_map)
+    # https://sologala.github.io/2024/12/22/%E8%B7%9F%E8%B8%AA%E8%AF%84%E4%BC%B0%E6%8C%87%E6%A0%87.html
+    Fmax = np.max(response_map)
     Fmin=np.min(response_map)
     apce=(Fmax-Fmin)**2/(np.mean((response_map-Fmin)**2))
     return apce
 
 def PSR(response):
+    # 峰值旁瓣比
     response_map=response.copy()
     max_loc=np.unravel_index(np.argmax(response_map, axis=None),response_map.shape)
     y,x=max_loc

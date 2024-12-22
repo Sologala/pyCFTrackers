@@ -10,8 +10,8 @@ Python re-implemented of "Learning Spatial-Temporal Regularized Correlation Filt
 """
 import numpy as np
 import cv2
-from lib.utils import cos_window,gaussian2d_rolled_labels
-from lib.fft_tools import fft2,ifft2
+from pyCFTrackers.lib.utils import cos_window,gaussian2d_rolled_labels
+from pyCFTrackers.lib.fft_tools import fft2,ifft2
 from .base import BaseCF
 from .feature import extract_hog_feature,extract_cn_feature
 from .config import strdcf_hc_config

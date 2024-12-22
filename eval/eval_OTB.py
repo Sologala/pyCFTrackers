@@ -4,9 +4,9 @@ from os.path import join, realpath, dirname
 
 from tqdm import tqdm
 from multiprocessing import Pool
-from lib.pysot.datasets import OTBDataset
-from lib.pysot.evaluation import OPEBenchmark
-from lib.pysot.visualization import draw_success_precision
+from pyCFTrackers.lib.pysot.datasets import OTBDataset
+from pyCFTrackers.lib.pysot.evaluation import OPEBenchmark
+from pyCFTrackers.lib.pysot.visualization import draw_success_precision
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='VOT Evaluation')

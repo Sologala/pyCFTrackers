@@ -1,4 +1,7 @@
 *.egg-info
 dist
 *.so
+*.pyx
 lib/pysot/utils/region.c
+__pycache__
+lib/pysot/utils/region.pyx

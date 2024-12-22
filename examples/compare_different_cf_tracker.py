@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from examples.pytracker import PyTracker
 import json
-from lib.utils import get_ground_truthes,get_thresh_success_pair,get_thresh_precision_pair,calAUC
+from pyCFTrackers.lib.utils import get_ground_truthes,get_thresh_success_pair,get_thresh_precision_pair,calAUC
 from examples.otbdataset_config import OTBDatasetConfig
 if __name__ == '__main__':
     data_dir = '../dataset/OTB100'

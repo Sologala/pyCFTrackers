@@ -14,8 +14,8 @@ import numpy as np
 import cv2
 from .base import BaseCF
 from .feature import extract_hog_feature, extract_cn_feature
-from lib.utils import cos_window
-from lib.fft_tools import fft2, ifft2
+from ..lib.utils import cos_window
+from ..lib.fft_tools import fft2, ifft2
 from .scale_estimator import LPScaleEstimator
 
 

@@ -9,7 +9,7 @@ Python re-implementation of "Visual Object Tracking using Adaptive Correlation F
 """
 import numpy as np
 import cv2
-from lib.utils import gaussian2d_labels,cos_window
+from pyCFTrackers.lib.utils import gaussian2d_labels,cos_window
 from .base import BaseCF
 
 class MOSSE(BaseCF):

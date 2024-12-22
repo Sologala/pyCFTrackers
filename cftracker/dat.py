@@ -9,10 +9,10 @@ Python re-implementation of "In Defense of Color-based Model-free Tracking"
 """
 import numpy as np
 import cv2
-from cftracker.base import BaseCF
-from lib.utils import cos_window
+from .base import BaseCF
+from ..lib.utils import cos_window
 import copy
-from cftracker.config.dat_config import DATConfig
+from .config.dat_config import DATConfig
 
 class DAT(BaseCF):
     def __init__(self):

@@ -3,10 +3,10 @@ import scipy
 import cv2
 from numpy.fft import fft, ifft
 from scipy import signal
-from lib.eco.fourier_tools import resize_dft
+from ..lib.eco.fourier_tools import resize_dft
 from .feature import extract_hog_feature
-from lib.utils import cos_window
-from lib.fft_tools import ifft2,fft2
+from ..lib.utils import cos_window
+from ..lib.fft_tools import ifft2,fft2
 
 class DSSTScaleEstimator:
     def __init__(self,target_sz,config):

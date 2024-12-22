@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from lib.utils import get_img_list,get_ground_truthes,APCE,PSR
+from pyCFTrackers.lib.utils import get_img_list,get_ground_truthes,APCE,PSR
 from cftracker.mosse import MOSSE
 from cftracker.csk import CSK
 from cftracker.kcf import KCF
@@ -16,7 +16,7 @@ from cftracker.ldes import LDES
 from cftracker.mkcfup import MKCFup
 from cftracker.strcf import STRCF
 from cftracker.mccth_staple import MCCTHStaple
-from lib.eco.config import otb_deep_config,otb_hc_config
+from pyCFTrackers.lib.eco.config import otb_deep_config,otb_hc_config
 from cftracker.config import staple_config,ldes_config,dsst_config,csrdcf_config,mkcf_up_config,mccth_staple_config
 class PyTracker:
     def __init__(self,img_dir,tracker_type,dataset_config):

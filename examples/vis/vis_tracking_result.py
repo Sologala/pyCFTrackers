@@ -3,9 +3,9 @@ import numpy as np
 import os
 import cv2
 from examples.vis.OTB100_info import OTB100,OTB50,IV,SV,OCC,DEF
-from lib.utils import get_img_list
+from pyCFTrackers.lib.utils import get_img_list
 from examples.vis.draw_plot import get_preds_by_name
-from lib.utils import get_thresh_success_pair,calAUC
+from pyCFTrackers.lib.utils import get_thresh_success_pair,calAUC
 
 def vis_results(results_json_path,dataset_dir,data_name):
     f = open(results_json_path, 'r')
